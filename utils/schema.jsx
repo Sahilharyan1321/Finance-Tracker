@@ -28,3 +28,27 @@ export const Expenses = pgTable("expenses", {
   budgetId: integer("budgetId").references(() => Budgets.id),
   createdAt: varchar("createdAt").notNull(),
 });
+
+// CREATE TABLE budgets (
+//   id SERIAL PRIMARY KEY,
+//   name VARCHAR NOT NULL,
+//   amount VARCHAR NOT NULL,
+//   icon VARCHAR,
+//   createdBy VARCHAR NOT NULL
+// );
+
+// CREATE TABLE incomes (
+//   id SERIAL PRIMARY KEY,
+//   name VARCHAR NOT NULL,
+//   amount VARCHAR NOT NULL,
+//   icon VARCHAR,
+//   createdBy VARCHAR NOT NULL
+// );
+
+// CREATE TABLE expenses (
+//   id SERIAL PRIMARY KEY,
+//   name VARCHAR NOT NULL,
+//   amount NUMERIC NOT NULL DEFAULT 0,
+//   budgetId INTEGER REFERENCES budgets(id),
+//   createdAt VARCHAR NOT NULL
+// );

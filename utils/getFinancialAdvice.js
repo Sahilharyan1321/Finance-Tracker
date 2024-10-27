@@ -17,7 +17,7 @@ const getFinancialAdvice = async (totalBudget, totalIncome, totalSpend) => {
       - Total Budget: ${totalBudget} INR
       - Expenses: ${totalSpend} INR 
       - Incomes: ${totalIncome} INR
-      Provide detailed financial advice in 2 sentences to help the user manage their finances more effectively.
+      Provide a detailed financial advice plan to help the user manage their finances more effectively. Include specific steps for budgeting, saving, and investing. minimum 300 words.
     `;
 
     // Send the prompt to the Groq API
